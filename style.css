@@ -1,0 +1,189 @@
+html{ font-size: 62.2%; }
+
+*{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    overflow-wrap: break-word;
+    letter-spacing: 0.2rem;
+}
+
+section, header, .level-container img{
+    outline-width: 0.5rem;
+    outline-style: groove;
+}
+
+section, header, main{
+    margin: 5%;
+    padding: 5%;
+}
+
+section, header, .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+}
+
+header{
+button, a{
+        outline-width: 2px;
+        outline-style: ridge;
+        margin: 10px;
+        padding: 1.5rem;
+    }
+    img{ width: 10rem; }
+}
+main > div{
+    display: grid;
+    grid-template-columns: repeat(3, 40%);
+    grid-auto-rows: max-content;
+    gap: 1.5rem;
+    img{ width: 50%; }
+}
+
+h1, h3{ margin: 5%; }
+
+body.lightTheme{ background-color: skyblue; }
+
+body.darkTheme{ background-color: darkslateblue; }
+
+.Libre{ font-family: "Libre Baskerville"; }
+
+.Lobster{ font-family: "Lobster"; }
+
+.Times{ font-family: 'Times New Roman', Times, serif; }
+
+.Bebas{ font-family: "Bebas Neue"; }
+
+.Arial{ font-family: Arial, Helvetica, sans-serif }
+
+.lightTheme{
+    section{
+        background-color: aliceblue;
+        outline-color: black;
+        color: black;
+    }
+    header{
+        background-color: chocolate;
+        outline-color: black;
+        color: aliceblue;
+        button, a{
+            background-color: black;
+            outline-color: aliceblue;
+            color: aliceblue;
+        }
+        button:hover, a:hover{
+            background-color: orangered;
+            outline-color: aliceblue;
+            color: blueviolet;
+        }
+    }
+}
+.darkTheme{
+    section{
+        background-color: black;
+        outline-color: aliceblue;
+        color: aliceblue;
+    }
+    header{
+        background-color: blue;
+        outline-color: gold;
+        color: aliceblue;
+        button, a{
+            background-color: black;
+            outline-color: gold;
+            color: violet;
+        }
+        button:hover, a:hover{
+            background-color: gold;
+            outline-color: blueviolet;
+            color: orangered;
+        }
+    }
+}
+
+.level-container {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+}
+  
+  .level-link {
+    display: block;
+    position: relative;
+img {
+    width: 100%;
+    height: auto; 
+    display: block;
+  }
+}
+  
+  .level-overlay {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 1.5rem; 
+    padding: 0.5rem;
+    text-align: center;
+}
+  
+.horrorLevel{
+    a{ color: red; }
+    a:hover{ color: #b35353; }
+}
+
+.tecnoLevel{
+    font-family: "Doto";
+    a{ color: cyan; }
+    a:hover{ color: #ffffff; }
+}
+
+.foodLevel{
+    font-family: "cinnamon-coffe-cake";
+    a{ color: chocolate; }
+    a:hover{ color: rgb(196, 140, 101); }
+}
+
+.row{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.legendLevel{ a:hover{ color: rgb(134, 123, 123); } }
+
+.peacefullLevel, .forestLevel{ a:hover{ color: blue; } }
+
+.peacefullLevel, .legendLevel{ a{ color: gold; } }
+
+.forestLevel{ a{ color: lime; }}
+
+.funnyLevel{
+    a{ color: rgb(102, 218, 102); }
+    a:hover{ color: orangered; }
+}
+
+.purpleLevel, .forestLevel{ a:hover{ color: cyan; }}
+
+.snowyLevel{
+a{ color: skyblue; }
+a:hover{ color: rgb(32, 94, 119); }
+}
+
+.purpleLevel a{ color: blueviolet; }
+
+@media screen and (min-width: 850px) {
+       section{ font-size: 2em; }
+main{
+        margin-left: 0%;
+        padding-left: 0%;
+        div{ gap: 2rem; }
+     }
+}
+@media screen and (min-width: 1000px) { main > div{ grid-template-columns: repeat(4, 30%); } }
